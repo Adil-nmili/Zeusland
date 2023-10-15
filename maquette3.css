@@ -5,7 +5,7 @@
 }
 .section-one-1{
     width: 100%;
-    height: 40vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,8 +36,9 @@
 }
 .section-two {
     width: 100%;
-    height: 60vh;
+    height: 65vh;
     padding: 0 1rem;
+    overflow: hidden;
     background: linear-gradient(to right, rgb(64, 64, 190)20%,rgb(7, 7, 114));
 }
 .section-two-center {
@@ -49,10 +50,11 @@
     justify-content: space-between;
     align-items: end;
     gap: 10px;
+
 }
 .section-two-center img {
-    width: 50%;
     height: 80%;
+    box-shadow: 5px 0px 8px #000;
 }
 .what-we-provide {
     width: 50%;
@@ -68,6 +70,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
+    align-items: start;
     gap: 1rem;
 }
 .provide-top h2 {
@@ -77,34 +80,34 @@
 
 }
 .provide-top p {
+    font-size: .9rem;
     letter-spacing: 1px;
     color: #eee;
     text-transform: capitalize;
 }
 .provide-top button {
-    width: 50%;
-    padding: .5rem 0;
-    margin: 0 auto;
+    width: 30%;
+    padding: .5rem 0rem;
     text-transform: uppercase;
     font-weight: 600;
     border: none;
-    border-radius: 10px;
+    color: #eee;
+    /* border-radius: 10px; */
     box-shadow: 4px 4px 8px #000;
-    background: linear-gradient(to right, rgb(64, 64, 190)40%,rgb(7, 7, 114));
+    background: linear-gradient(to right, rgb(64, 64, 190)70%,rgb(7, 7, 114));
 
 }
 .our-services {
     padding: 1rem .8rem;
     width: 100%;
     height: fit-content;
+    display: flex;
+    align-items: center;
 }
 .our-services-center {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
 }
 .our-services-header {
     width: 100%;
@@ -120,12 +123,13 @@
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 .our-services-header p {
     width: 80%;
+    font-size: .9rem;
     height: fit-content;
     padding: .5rem .2rem;
     text-align: center;
@@ -134,8 +138,9 @@
     letter-spacing: 1px;
 }
 .support-carts {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin:auto 0;
     padding: .8rem .5rem;
     display: flex;
     justify-content: space-evenly;
@@ -148,7 +153,7 @@
     justify-content: space-evenly;
 }
 .support-cart h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #eee;
     text-align: center;
     text-transform: capitalize;
@@ -166,22 +171,23 @@
     gap: 5px;
 }
 .support-cart-btns {
-    width: 100%;
+    width: 90%;
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 .support-cart-btns button {
     width: 40%;
-    font-size: 1rem;
+    font-size: .95rem;
     font-weight: 600;
     text-transform: capitalize;
     border: none;
     border-radius: 10px;
     padding: .5rem 0;
     text-align: center;
-
+    box-shadow: 2px 3px 5px rgb(53, 53, 53);
 }
 .support-cart-btns button:first-of-type {
     border: 2px solid rgb(7, 7, 114);
@@ -199,70 +205,86 @@
 }
 .products-business {
     width: 100%;
-    height: 100%;
-    background-color: aqua;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    max-width: 900px;
+    height: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 28%);
+    grid-template-rows: repeat(3, 33%);
+    justify-content: space-evenly;
+    align-content: space-evenly;
 }
 .products-business-cart {
-    width: 32%;
-    height: 30%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    justify-content: center;
+}
+.products-business-cart:first-of-type {
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
 .products-business-cart img {
     width: 100%;
-    height: 70%;
+    height: 80%;
 }
 .products-business-details {
+    padding: 3px 0px;
     width: 100%;
-    height: 30%;
+    height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .products-business-details div:first-of-type {
-    width: 60%;
-    height: 80%;
+    width: 75%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: .3rem;
+    gap: .1rem;
 }
 .products-business-details div:first-of-type h2 {
     color: rgb(64, 64, 190);
     text-transform: capitalize;
-    font-size: 1.1rem;
+    font-size: .9rem;
     letter-spacing: 1px;
 }
 .products-business-details div:first-of-type h3 {
     color: rgb(53, 53, 53);
     text-transform: capitalize;
-    font-size: .8rem;
-    letter-spacing: 1px;
+    font-size: .6rem;
+    letter-spacing: .5px;
 }
 .share-container {
     height: 100%;
-    width: 40%;
+    width: 25%;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
+    padding: 10px 0px;
+    align-items: start;
+    justify-content: center;
 }
-.share-icon{
-    width: 40%;
-    height: 50%;
+.share-icon {
+    width: 30px;
+    height: 30px;
     border-radius: 10px;
     background: linear-gradient(to right, rgb(64, 64, 190)10%,rgb(7, 7, 114));
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.share-container div img {
-    width: 50%;
+.share-container img {
+    width: 80%;
+    height: 70%;
+}
+.share-container h4 {
+    width: 75%;
     height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+    text-transform: capitalize;
+    color: rgb(53, 53, 53);
 }
