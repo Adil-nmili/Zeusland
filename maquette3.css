@@ -275,9 +275,11 @@
     justify-content: center;
 }
 .share-container img {
-    width: 80%;
+    width: 30%;
     height: 70%;
+    margin-right: 10px;
 }
+
 .share-container h4 {
     width: 75%;
     height: 50%;
