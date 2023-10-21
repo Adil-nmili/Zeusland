@@ -55,6 +55,7 @@
 .section-two-center img {
     height: 80%;
     box-shadow: 5px 0px 8px #000;
+    object-fit: cover;
 }
 .what-we-provide {
     width: 50%;
@@ -228,6 +229,7 @@
 .products-business-cart img {
     width: 100%;
     height: 80%;
+    object-fit: cover;
 }
 .products-business-details {
     padding: 3px 0px;
